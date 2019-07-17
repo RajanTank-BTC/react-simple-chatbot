@@ -31,7 +31,7 @@ class TextStep extends Component {
     const { previousValue, step } = this.props;
     const { message } = step;
 
-    return message ? message.replace(/{previousValue}/g, previousValue) : '';
+    return message && message.replace ? message.replace(/{previousValue}/g, previousValue) : '';
   };
 
   renderMessage = () => {
@@ -118,7 +118,7 @@ TextStep.propTypes = {
 TextStep.defaultProps = {
   previousStep: {},
   previousValue: '',
-  speak: () => {},
+  speak: () => { },
   steps: {}
 };
 

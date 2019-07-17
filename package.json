@@ -2,7 +2,7 @@
   "name": "react-simple-chatbot",
   "version": "0.6.1",
   "description": "React Simple Chatbot",
-  "main": "lib/index.js",
+  "main": "dist/react-simple-chatbot.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint lib/*.jsx",
     "prepublish": "npm run build",
@@ -17,7 +17,7 @@
     "analyze": "BUNDLE_ANALYZE=true ./node_modules/.bin/webpack --config webpack.config.prod.js -p"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "nyc": {
     "function": 80,
