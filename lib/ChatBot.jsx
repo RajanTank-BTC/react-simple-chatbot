@@ -234,7 +234,6 @@ class ChatBot extends Component {
   };
 
   triggerNextStep = data => {
-    console.log(data, "dddddddddddddd")
     const { enableMobileAutoFocus } = this.props;
     const { defaultUserSettings, previousSteps, renderedSteps, steps } = this.state;
 
